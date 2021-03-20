@@ -4,37 +4,87 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-alabaster==0.7.10         # via oic
-asn1crypto==0.24.0        # via cryptography
-beaker==1.9.0             # via oic
-certifi==2018.1.18        # via requests
-cffi==1.11.5              # via cryptography
-chardet==3.0.4            # via requests
-click==6.7                # via flask
-cryptography<=2.3         # via pyopenssl
-enum34==1.1.6             # via cryptography
+alabaster==0.7.10
+    # via oic
+beaker==1.9.0
+    # via oic
+certifi==2018.1.18
+    # via requests
+cffi==1.14.5
+    # via cryptography
+chardet==3.0.4
+    # via requests
+click==6.7
+    # via flask
+cryptography==3.3.2
+    # via pyopenssl
+enum34==1.1.6
+    # via cryptography
 flask-httpauth==3.2.3
+    # via -r requirements.in
 flask-pyoidc==1.2.0
+    # via -r requirements.in
 flask-sqlalchemy==2.3.2
-flask>=1.0.0
-funcsigs==1.0.2           # via beaker
-future==0.16.0            # via oic, pyjwkest
+    # via -r requirements.in
+flask==1.1.2
+    # via
+    #   -r requirements.in
+    #   flask-httpauth
+    #   flask-pyoidc
+    #   flask-sqlalchemy
+funcsigs==1.0.2
+    # via beaker
+future==0.16.0
+    # via
+    #   oic
+    #   pyjwkest
 githubpy==1.1.0
+    # via -r requirements.in
 ibm-db-sa==0.3.3
+    # via -r requirements.in
 ibm-db==2.0.8
-idna==2.6                 # via cryptography, requests
-ipaddress==1.0.19         # via cryptography
-itsdangerous==0.24        # via flask
-jinja2==2.9.6             # via flask
-mako==1.0.7               # via oic
-markupsafe==1.0           # via jinja2, mako
-oic==0.11.0.1             # via flask-pyoidc
-pycparser==2.18           # via cffi
-pycryptodomex==3.5.1      # via oic, pyjwkest
-pyjwkest==1.4.0           # via oic
-pyopenssl==17.5.0         # via oic
-requests==2.18.4          # via oic, pyjwkest
-six==1.11.0               # via cryptography, oic, pyjwkest, pyopenssl
-sqlalchemy==1.2.6         # via flask-sqlalchemy, ibm-db-sa
-urllib3==1.22             # via requests
-werkzeug==0.12.1          # via flask
+    # via -r requirements.in
+idna==2.6
+    # via requests
+ipaddress==1.0.19
+    # via cryptography
+itsdangerous==0.24
+    # via flask
+jinja2==2.11.3
+    # via flask
+mako==1.0.7
+    # via oic
+markupsafe==1.0
+    # via
+    #   jinja2
+    #   mako
+oic==0.11.0.1
+    # via flask-pyoidc
+pycparser==2.18
+    # via cffi
+pycryptodomex==3.5.1
+    # via
+    #   oic
+    #   pyjwkest
+pyjwkest==1.4.0
+    # via oic
+pyopenssl==17.5.0
+    # via oic
+requests==2.18.4
+    # via
+    #   oic
+    #   pyjwkest
+six==1.11.0
+    # via
+    #   cryptography
+    #   oic
+    #   pyjwkest
+    #   pyopenssl
+sqlalchemy==1.2.6
+    # via
+    #   flask-sqlalchemy
+    #   ibm-db-sa
+urllib3==1.22
+    # via requests
+werkzeug==1.0.1
+    # via flask
